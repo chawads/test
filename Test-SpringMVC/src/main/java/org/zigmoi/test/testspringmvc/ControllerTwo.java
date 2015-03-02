@@ -1,5 +1,8 @@
 package org.zigmoi.test.testspringmvc;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,17 +13,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 @Controller
-public class ControllerOne {
+public class ControllerTwo {
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String serve() {
+    @RequestMapping(value = "/hello2", method = RequestMethod.POST)
+    public void serve(HttpServletRequest req, HttpServletResponse res) {
 
-        return "login";
-    }
-
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String serve2() {
-
-        return "login";
     }
 }
