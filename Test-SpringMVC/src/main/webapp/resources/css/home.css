@@ -1,0 +1,70 @@
+html { 
+  background-color:honeydew; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.top-part{
+	width: 99%;
+	position: absolute;
+	line-height: 18px;
+	border-bottom: 2px solid;
+	border-color: rgb(66, 61, 61);
+}
+
+.top-part .prod-name{
+	font: 18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:rgb(73, 1, 1);
+	text-align: left;
+	float: left;
+	/* content:url(./resources/images/gamma-logo.png); */
+}
+
+.top-part .user-name{
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:rgb(73, 1, 1);
+	text-align: right;
+	float: right;
+}
+
+#divElement{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -150px;
+	width: 300px;
+	height: 200px;
+	/* border: 2px solid; */
+}
+
+#divElement #rows{
+	overflow: hidden;
+	height: 50%;
+	width: 100%;
+}
+
+#divElement #rows .items{
+	float : left;
+	height: 100%;
+	width: 32%;
+	border-style: 1px solid;
+	border-color: aqua;
+}
+
+.bottom-part{
+	position: fixed; 
+	bottom: 0; 
+	text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    font-size: 12px;
+    /* overflow : hidden;	 */
+	color:rgb(73, 1, 1);
+	border-top: 2px solid;
+	border-color: rgb(66, 61, 61);
+}
+	​

@@ -1,0 +1,719 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+  margin-top:60px;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 20px;
+  background-color: #eee;
+  color:#00446a; 
+  font-size:0.9em;
+}
+body > .navbar .nav > li > a > .label {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  right: 2px;
+  font-size: 10px;
+  font-weight: normal;
+  width: 15px;
+  height: 15px;
+  line-height: 1.0em;
+  text-align: center;
+  padding: 2px;
+}
+
+body > .navbar .nav > li > ul {
+	background-color: #fff;
+	border: 1px solid #dfdfdf;
+	width: 220px;  
+	padding: 0 0 0 0!important;  
+	margin: 0!important;  
+	top: 100%;   
+	-webkit-border-radius: 4px !important;  
+	-moz-border-radius: 4px !important;  
+	border-radius: 4px !important;
+}
+
+
+
+.notify-arrow-green {
+	border-color: transparent transparent #68dff0;
+	border-bottom-color: #68dff0 !important;
+	border-top-color: #68dff0 !important;
+}
+
+.notification_item {
+	border-bottom: 1px solid #EBEBEB !important;
+	color: #444444 !important;
+	padding: 5px 10px !important;
+	font-size: 11px !important;
+	border-top-left-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	line-height: 16px !important;
+}
+
+
+.dd-header{
+	border-top-left-radius: 4px !important; 
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	background-color: #ffffff !important;
+	padding: 7px 10px !important;
+	border-bottom: 1px solid #f4f4f4 !important;
+	background-color:#56E597 !important;
+	color: #444444 !important;
+	font-size: 14px !important;
+	text-align: center;
+}
+
+
+ tbody > tr:hover {
+ cursor: pointer;
+  }
+ .fc-header-title h2  {
+ 	font-size:1.4em;
+ }
+    div.DTTT { margin-bottom: 0.5em; float: right; }
+    div.dataTables_wrapper { clear: both; }
+
+ @media print {
+    table {
+		width: 100%;
+	}
+	 
+	.DataTables_sort_wrapper {
+		font-weight: bold;
+	}
+	 
+	tr, td, th {
+		border: 1px solid #000;
+	}
+}
+
+.fixedscroll {
+	max-height: 350px;
+	width: 100%;
+	margin: 0;
+	overflow-y: auto;
+}
+.row {
+	margin-top: 20px;
+}
+
+.table-condensed {
+	font-size: 0.8em;
+	width: 100%
+}
+
+.table tbody tr.highlight td {
+	background-color: rgb(177, 171, 197);
+}
+
+/* ========================================================================
+   Component: panel
+ ========================================================================== */
+/* -------------------------------------
+ * Panel Container
+ * ------------------------------------- */
+
+/*
+.panel {
+  margin-bottom: 21px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin: 10px 10px 10px 10px !important;
+}
+
+.panel-body {
+  padding: 15px;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+.panel-title > a {
+  color: inherit;
+}
+.panel-footer {
+  padding: 10px 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #eeeeee;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.panel-default{
+  border-color: #cfdbe2;
+  border-top-width: 3px;
+}
+*/
+
+
+/* ========================================================================
+   Component: radial-bar.less
+ ========================================================================== */
+/* -------------------------------------
+ * Bar container
+ * ------------------------------------- */
+.radial-bar {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 50%;
+  /* border: 2px solid #fafafa; */
+  background-color: transparent;
+  /* margin-bottom: 20px; */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 80px;
+  height: 80px;
+  font-size: 18px;
+}
+.radial-bar:after,
+.radial-bar > img {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: #a1a2a3;
+}
+.radial-bar:after {
+  content: attr(data-label);
+  background-color: #ffffff;
+  z-index: 101;
+}
+.radial-bar > img {
+  z-index: 102;
+}
+.radial-bar:after,
+.radial-bar > img {
+  width: 56px;
+  height: 56px;
+  margin-left: 12px;
+  margin-top: 12px;
+  line-height: 56px;
+}
+.radial-bar.radial-bar-0 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(90deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-5 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(108deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-10 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(126deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-15 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(144deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-20 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(162deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-25 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(180deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-30 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(198deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-35 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(216deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-40 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(234deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-45 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(252deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-50 {
+  background-image: linear-gradient(270deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-55 {
+  background-image: linear-gradient(288deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-60 {
+  background-image: linear-gradient(306deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-65 {
+  background-image: linear-gradient(324deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-70 {
+  background-image: linear-gradient(342deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-75 {
+  background-image: linear-gradient(360deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-80 {
+  background-image: linear-gradient(378deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-85 {
+  background-image: linear-gradient(396deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-90 {
+  background-image: linear-gradient(414deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-95 {
+  background-image: linear-gradient(432deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar.radial-bar-100 {
+  background-image: linear-gradient(450deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-0 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(90deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-5 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(108deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-10 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(126deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-15 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(144deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-20 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(162deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-25 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(180deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-30 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(198deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-35 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(216deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-40 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(234deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-45 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(252deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-50 {
+  background-image: linear-gradient(270deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-55 {
+  background-image: linear-gradient(288deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-60 {
+  background-image: linear-gradient(306deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-65 {
+  background-image: linear-gradient(324deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-70 {
+  background-image: linear-gradient(342deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-75 {
+  background-image: linear-gradient(360deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-80 {
+  background-image: linear-gradient(378deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-85 {
+  background-image: linear-gradient(396deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-90 {
+  background-image: linear-gradient(414deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-95 {
+  background-image: linear-gradient(432deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-primary.radial-bar-100 {
+  background-image: linear-gradient(450deg, #5d9cec 50%, transparent 50%, transparent), linear-gradient(270deg, #5d9cec 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-0 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(90deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-5 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(108deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-10 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(126deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-15 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(144deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-20 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(162deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-25 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(180deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-30 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(198deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-35 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(216deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-40 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(234deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-45 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(252deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-50 {
+  background-image: linear-gradient(270deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-55 {
+  background-image: linear-gradient(288deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-60 {
+  background-image: linear-gradient(306deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-65 {
+  background-image: linear-gradient(324deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-70 {
+  background-image: linear-gradient(342deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-75 {
+  background-image: linear-gradient(360deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-80 {
+  background-image: linear-gradient(378deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-85 {
+  background-image: linear-gradient(396deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-90 {
+  background-image: linear-gradient(414deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-95 {
+  background-image: linear-gradient(432deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-success.radial-bar-100 {
+  background-image: linear-gradient(450deg, #27c24c 50%, transparent 50%, transparent), linear-gradient(270deg, #27c24c 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-0 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(90deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-5 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(108deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-10 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(126deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-15 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(144deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-20 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(162deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-25 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(180deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-30 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(198deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-35 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(216deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-40 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(234deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-45 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(252deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-50 {
+  background-image: linear-gradient(270deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-55 {
+  background-image: linear-gradient(288deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-60 {
+  background-image: linear-gradient(306deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-65 {
+  background-image: linear-gradient(324deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-70 {
+  background-image: linear-gradient(342deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-75 {
+  background-image: linear-gradient(360deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-80 {
+  background-image: linear-gradient(378deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-85 {
+  background-image: linear-gradient(396deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-90 {
+  background-image: linear-gradient(414deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-95 {
+  background-image: linear-gradient(432deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-info.radial-bar-100 {
+  background-image: linear-gradient(450deg, #23b7e5 50%, transparent 50%, transparent), linear-gradient(270deg, #23b7e5 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-0 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(90deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-5 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(108deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-10 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(126deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-15 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(144deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-20 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(162deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-25 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(180deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-30 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(198deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-35 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(216deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-40 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(234deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-45 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(252deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-50 {
+  background-image: linear-gradient(270deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-55 {
+  background-image: linear-gradient(288deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-60 {
+  background-image: linear-gradient(306deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-65 {
+  background-image: linear-gradient(324deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-70 {
+  background-image: linear-gradient(342deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-75 {
+  background-image: linear-gradient(360deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-80 {
+  background-image: linear-gradient(378deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-85 {
+  background-image: linear-gradient(396deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-90 {
+  background-image: linear-gradient(414deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-95 {
+  background-image: linear-gradient(432deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-warning.radial-bar-100 {
+  background-image: linear-gradient(450deg, #ff902b 50%, transparent 50%, transparent), linear-gradient(270deg, #ff902b 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-0 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(90deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-5 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(108deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-10 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(126deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-15 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(144deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-20 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(162deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-25 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(180deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-30 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(198deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-35 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(216deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-40 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(234deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-45 {
+  background-image: linear-gradient(90deg, #fafafa 50%, transparent 50%, transparent), linear-gradient(252deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-50 {
+  background-image: linear-gradient(270deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-55 {
+  background-image: linear-gradient(288deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-60 {
+  background-image: linear-gradient(306deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-65 {
+  background-image: linear-gradient(324deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-70 {
+  background-image: linear-gradient(342deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-75 {
+  background-image: linear-gradient(360deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-80 {
+  background-image: linear-gradient(378deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-85 {
+  background-image: linear-gradient(396deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-90 {
+  background-image: linear-gradient(414deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-95 {
+  background-image: linear-gradient(432deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-danger.radial-bar-100 {
+  background-image: linear-gradient(450deg, #f05050 50%, transparent 50%, transparent), linear-gradient(270deg, #f05050 50%, #fafafa 50%, #fafafa);
+}
+.radial-bar-lg {
+  width: 100px;
+  height: 100px;
+  font-size: 22px;
+}
+.radial-bar-lg:after,
+.radial-bar-lg > img {
+  width: 70px;
+  height: 70px;
+  margin-left: 15px;
+  margin-top: 15px;
+  line-height: 70px;
+}
+.radial-bar-sm {
+  width: 50px;
+  height: 50px;
+  font-size: 12px;
+}
+.radial-bar-sm:after,
+.radial-bar-sm > img {
+  width: 35px;
+  height: 35px;
+  margin-left: 7.5px;
+  margin-top: 7.5px;
+  line-height: 35px;
+}
+.radial-bar-xs {
+  width: 30px;
+  height: 30px;
+  font-size: 8px;
+}
+.radial-bar-xs:after,
+.radial-bar-xs > img {
+  width: 21px;
+  height: 21px;
+  margin-left: 4.5px;
+  margin-top: 4.5px;
+  line-height: 21px;
+}
+x:-o-prefocus,
+.radial-bar {
+  background-clip: content-box;
+}
+
+
+/* ========================================================================
+   Component: form-elements.less
+ ========================================================================== */
+/**
+ * Custom form elements
+ *    - Checkbox
+ *    - Radios
+ *    - Switch
+ *    - Rounded inputs
+ */
+.switch * {
+  cursor: pointer;
+}
+.switch input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+.switch span {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 100px;
+  transition: all .5s;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+.switch span:after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #ddd;
+  border-radius: 400px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .2s;
+}
+.switch.switch-lg span {
+  width: 50px;
+  height: 25px;
+}
+.switch.switch-lg span:after {
+  height: 23px;
+  width: 23px;
+}
+.switch.switch-sm span {
+  width: 30px;
+  height: 15px;
+}
+.switch.switch-sm span:after {
+  height: 13px;
+  width: 13px;
+}
+.switch input:checked + span {
+  background-color: #5d9cec;
+  border-color: #5d9cec;
+  transition: all .5s;
+}
+.switch input:checked + span:after {
+  left: 50%;
+  transition: all .2s;
+}

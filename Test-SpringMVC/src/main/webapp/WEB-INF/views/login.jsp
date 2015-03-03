@@ -4,7 +4,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
 <html>
-<title>Login | Vivo</title>
+<title>Login | Zigmoi</title>
 <meta name="viewport" content="width = 960, minimum-scale = 0.25, maximum-scale = 1.60">
 <link rel="stylesheet" type="text/css" href="./resources/css/styleup.css"/>
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.3.0/cerulean/bootstrap.min.css">
